@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true, // Cho phép import và compile file .js trong dự án cùng với .ts.
+    "skipLibCheck": true, // Bỏ qua kiểm tra type trong các file .d.ts trong node_modules → build nhanh hơn, ít lỗi không cần thiết.
+    "strict": true, // Bật strict mode của TS (an toàn nhất, code sạch hơn). Bao gồm strictNullChecks, noImplicitAny, v.v.
+    "noEmit": true, // Không phát sinh file JS khi build bằng tsc. Với Next.js, TS chỉ dùng để type check, còn build do Next.js xử lý.
+    "esModuleInterop": true, // Cho phép import mặc định từ module CommonJS.
+    "module": "esnext",
+    "moduleResolution": "bundler", //
+    "resolveJsonModule": true, // Cho phép import file .json như module:
+    "isolatedModules": true,
+    "jsx": "preserve", // JSX không được compile bởi TS → Next.js/Babel sẽ xử lý JSX.
+    "incremental": true,
+    "plugins": [ // 
+      {
+        "name": "next"
+      }
+    ],
+    "paths": { // Tạo alias @ trỏ tới src. Ví dụ:
+      "@/*": ["./src/*"]
+    }
+  },
+  // Danh sách file/thư mục mà TS sẽ kiểm tra:
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "postcss.config.mjs", "tailwind.config.js"],
+  // Bỏ qua node_modules khi type-check (cho nhanh, không cần thiết).
+  "exclude": ["node_modules"]
+}
