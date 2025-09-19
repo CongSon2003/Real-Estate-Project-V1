@@ -3,5 +3,7 @@ export { default as Footer } from "./footer/Footer";
 export { default as Nav } from "./header/Nav";
 export { default as Rectangle } from './header/Rectangle';
 export { default as Search } from './header/Search';
-export { default as ProperticeEnd } from './propertice/area/ProperticeEnd';
+export { default as ProperticeAreaEnd } from './propertice/area/ProperticeAreaEnd';
+export { default as ProperticeAreaStart } from './propertice/area/ProperticeAreaStart';
+export { default as ProperticeRentStart } from './propertice/rent/ProperticeRentStart';
 export { default as Section } from './section/Section';

@@ -31,7 +31,6 @@ initRouters(app)
 
 // Middleware handle error
 app.use((err: any, req: Request, res: Response, next: any) => {
-  console.error(err.stack);
   res.status(500).json({ message: err.message || "Internal Server Error" });
 });
 

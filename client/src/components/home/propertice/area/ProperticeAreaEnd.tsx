@@ -2,7 +2,7 @@ import Title from '@/components/title/Title'
 import React from 'react'
 import Icons from '@/utils/icon'
 const active = 'bg-white';
-function ProperticeEnd() {
+function ProperticeAreaEnd() {
   return (
     <div className='bg-primary-50 w-full flex justify-center md:h-[850px] lg:h-[650px]'>
       <div className='flex flex-col justify-center items-center h-full w-primary px-2 py-5'>
@@ -47,4 +47,4 @@ function ProperticeEnd() {
   )
 }
 
-export default ProperticeEnd
+export default ProperticeAreaEnd

@@ -4,7 +4,7 @@ import { IoHomeOutline } from "react-icons/io5";
 import Icons from "@/utils/icon";
 function Footer() {
   return (
-    <div className="w-full bg-white md:h-[350px] flex justify-center mt-5">
+    <div className="w-full bg-white lg:h-[350px] sm:[500px] flex justify-center mt-5">
       <div className="w-primary h-full flex flex-col justify-center px-2">
         <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-3">
           <div className="flex flex-col gap-3">
